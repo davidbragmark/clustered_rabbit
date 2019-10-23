@@ -1,1 +1,59 @@
-{"rabbit_version":"3.7.9","users":[{"name":"uLi3c-Y28DDSzkd_ehCi4sW3G_tpV3AMZLyePLsoQJU=","password_hash":"lYnShP6JMDf7L9nj4LXfdY/mn/IbZOqzfzFxtEWFEfXTa76N","hashing_algorithm":"rabbit_password_hashing_sha256","tags":""},{"name":"N8BsL5A7-S5gM9J0PRuOmCB3ooB0Vp-cKK1iwzHQBAg=","password_hash":"mxUbY/P7827dG2ptQyeviu09yyZ69hhatZ29HQLTIpZoN3/r","hashing_algorithm":"rabbit_password_hashing_sha256","tags":""},{"name":"aXUN77ksrQ9OzAi78hsWAdiLOkSmfJG9V8qU0vqzUsg=","password_hash":"x0CFQvHhRMw9liky5o+C5PBjvSIrG+RWTrIPqcOKqzqOtTrE","hashing_algorithm":"rabbit_password_hashing_sha256","tags":""},{"name":"yL-J2Jo1uzHhlBCSjMmZj6aoT-kmAEFTYV_3yB5GP4Y=","password_hash":"kt4fnKwjPqz4pW6nviJMBDpsDiFsjCmsrS/CWdTlH2m517Dl","hashing_algorithm":"rabbit_password_hashing_sha256","tags":""},{"name":"nZIB9iGXrXb8oTr4p2GJCQjEz-XT4ypy3epA_0JBpPk=","password_hash":"CJo9i2YtxkqPFYYnivXXGxyRE0QTwzdCYThRMWrOLaJHGbDX","hashing_algorithm":"rabbit_password_hashing_sha256","tags":""},{"name":"E66ohf8S0ReAxMSaODRhe_XMMFW6MHMv_faQR3_zp7w=","password_hash":"ahz/DyCtblGAz4GjI4DPGGNnTyUcG7szf5robqg1Fti3f5cx","hashing_algorithm":"rabbit_password_hashing_sha256","tags":""},{"name":"AKyurHuAvOcck3S57t-Az8fvzuS9bwrESv4YvHHYM8I=","password_hash":"CrAvGWCXgk73hNGVSJpteIjmh/kbqXUvHQl0XRp40McDu7Dk","hashing_algorithm":"rabbit_password_hashing_sha256","tags":""},{"name":"trms","password_hash":"3+FnjMv+iuPXm0NXbNugSXd2s1DBjJYcYinAHm2x7xcu1gy3","hashing_algorithm":"rabbit_password_hashing_sha256","tags":"administrator"},{"name":"IMkec4xxEZ1czzUDOZHrS7cXr9aYTJVpe-a6WfVXdEQ=","password_hash":"ma5KCxWl0RHE4ZQQmq4q2wxobhdcPsZws5Hz7VeY15GntMk5","hashing_algorithm":"rabbit_password_hashing_sha256","tags":""},{"name":"trms-dev-trunk","password_hash":"SQN9HNxMTGEXbFnkHkP5z7o8ScqO79V+0j60B3ipj/E1H6Tr","hashing_algorithm":"rabbit_password_hashing_sha256","tags":""},{"name":"TtrLY1r1y2klnS5k8608nIciMicMI6K-qkSr8qBwAF0=","password_hash":"h523EewY3MLfxZOh2VLn66OHDcYHlsEMRI1QRuzZII3/opKa","hashing_algorithm":"rabbit_password_hashing_sha256","tags":""},{"name":"ONH_qNL5EfBhPCYFVgORu9FhiHmLOiuVWkaCFKXu5lM=","password_hash":"C0te96ws3iAhRZ5464bCNA6Ni+AV94xl9H12y9Yam4uR/OSe","hashing_algorithm":"rabbit_password_hashing_sha256","tags":""},{"name":"-Uzn1QUiri1XU2pfH86m2J5Fefs-cYisXPQCpstq5OI=","password_hash":"et1t9/shrw/vRpxhALE48xS2PuV94EeYZAG1+KB+5fWYKNlI","hashing_algorithm":"rabbit_password_hashing_sha256","tags":""},{"name":"SeLuFoLbGB_XYTh_zEOBJw4ylbaYMQDiFS5By8owh6o=","password_hash":"U6/IKnMDGPswIQAeWKKdaBDGTL5gxzTjFAzmM5UXS35AzZ61","hashing_algorithm":"rabbit_password_hashing_sha256","tags":""},{"name":"guest","password_hash":"pDno1tDaAkRb/qBWKY0bZaIUSTdoUi3X16e9ScW/DUcfNb5P","hashing_algorithm":"rabbit_password_hashing_sha256","tags":"administrator"},{"name":"D2dMsQzxmvs-iu-PG-qSNaalw4PSSbNG6rp3Cc-RLao=","password_hash":"jw9h8mJjs+WkUd14pO7EJED+YGtVlj5UvTBTV8LNlgrHF/Hy","hashing_algorithm":"rabbit_password_hashing_sha256","tags":""},{"name":"6hH42aDJ0y3iZWPBznkI4OqtSQisNVT29hFzFO1wS0c=","password_hash":"NedDgpWWC6Iw3LJCMdmGILU65Gfo8lGO0GYWU8Gw0TEyXAFu","hashing_algorithm":"rabbit_password_hashing_sha256","tags":""}],"vhosts":[{"name":"/"}],"permissions":[{"user":"uLi3c-Y28DDSzkd_ehCi4sW3G_tpV3AMZLyePLsoQJU=","vhost":"/","configure":".*","write":".*","read":".*"},{"user":"yL-J2Jo1uzHhlBCSjMmZj6aoT-kmAEFTYV_3yB5GP4Y=","vhost":"/","configure":".*","write":".*","read":".*"},{"user":"D2dMsQzxmvs-iu-PG-qSNaalw4PSSbNG6rp3Cc-RLao=","vhost":"/","configure":".*","write":".*","read":".*"},{"user":"ONH_qNL5EfBhPCYFVgORu9FhiHmLOiuVWkaCFKXu5lM=","vhost":"/","configure":".*","write":".*","read":".*"},{"user":"E66ohf8S0ReAxMSaODRhe_XMMFW6MHMv_faQR3_zp7w=","vhost":"/","configure":".*","write":".*","read":".*"},{"user":"AKyurHuAvOcck3S57t-Az8fvzuS9bwrESv4YvHHYM8I=","vhost":"/","configure":".*","write":".*","read":".*"},{"user":"-Uzn1QUiri1XU2pfH86m2J5Fefs-cYisXPQCpstq5OI=","vhost":"/","configure":".*","write":".*","read":".*"},{"user":"IMkec4xxEZ1czzUDOZHrS7cXr9aYTJVpe-a6WfVXdEQ=","vhost":"/","configure":".*","write":".*","read":".*"},{"user":"SeLuFoLbGB_XYTh_zEOBJw4ylbaYMQDiFS5By8owh6o=","vhost":"/","configure":".*","write":".*","read":".*"},{"user":"6hH42aDJ0y3iZWPBznkI4OqtSQisNVT29hFzFO1wS0c=","vhost":"/","configure":".*","write":".*","read":".*"},{"user":"trms-dev-trunk","vhost":"/","configure":".*","write":".*","read":".*"},{"user":"nZIB9iGXrXb8oTr4p2GJCQjEz-XT4ypy3epA_0JBpPk=","vhost":"/","configure":".*","write":".*","read":".*"},{"user":"guest","vhost":"/","configure":".*","write":".*","read":".*"},{"user":"aXUN77ksrQ9OzAi78hsWAdiLOkSmfJG9V8qU0vqzUsg=","vhost":"/","configure":".*","write":".*","read":".*"},{"user":"trms","vhost":"/","configure":".*","write":".*","read":".*"},{"user":"N8BsL5A7-S5gM9J0PRuOmCB3ooB0Vp-cKK1iwzHQBAg=","vhost":"/","configure":".*","write":".*","read":".*"},{"user":"TtrLY1r1y2klnS5k8608nIciMicMI6K-qkSr8qBwAF0=","vhost":"/","configure":".*","write":".*","read":".*"}],"topic_permissions":[{"user":"nZIB9iGXrXb8oTr4p2GJCQjEz-XT4ypy3epA_0JBpPk=","vhost":"/","exchange":"toptracer-cloud.topic","write":"","read":"trms-client.us-hanoverpark37.*"},{"user":"6hH42aDJ0y3iZWPBznkI4OqtSQisNVT29hFzFO1wS0c=","vhost":"/","exchange":"toptracer-cloud.topic","write":"","read":"trms-client.trms-dev-trunk.*"},{"user":"SeLuFoLbGB_XYTh_zEOBJw4ylbaYMQDiFS5By8owh6o=","vhost":"/","exchange":"toptracer-cloud.topic","write":"","read":"trms-client.trms-dev-trunk.*"},{"user":"AKyurHuAvOcck3S57t-Az8fvzuS9bwrESv4YvHHYM8I=","vhost":"/","exchange":"toptracer-cloud.topic","write":"","read":"trms-client.nl-roosendaal8.*"},{"user":"trms-dev-trunk","vhost":"/","exchange":"toptracer-cloud.topic","write":".*","read":".*"},{"user":"-Uzn1QUiri1XU2pfH86m2J5Fefs-cYisXPQCpstq5OI=","vhost":"/","exchange":"toptracer-cloud.topic","write":"","read":"trms-client.nl-roosendaal8.*"},{"user":"IMkec4xxEZ1czzUDOZHrS7cXr9aYTJVpe-a6WfVXdEQ=","vhost":"/","exchange":"toptracer-cloud.topic","write":"","read":"trms-client.us-tumwater30.*"},{"user":"uLi3c-Y28DDSzkd_ehCi4sW3G_tpV3AMZLyePLsoQJU=","vhost":"/","exchange":"toptracer-cloud.topic","write":"","read":"trms-client.us-hanoverpark37.*"},{"user":"TtrLY1r1y2klnS5k8608nIciMicMI6K-qkSr8qBwAF0=","vhost":"/","exchange":"toptracer-cloud.topic","write":"","read":"trms-client.game-dev-test.*"},{"user":"aXUN77ksrQ9OzAi78hsWAdiLOkSmfJG9V8qU0vqzUsg=","vhost":"/","exchange":"toptracer-cloud.topic","write":"","read":"trms-client.se-danderyd254.*"},{"user":"yL-J2Jo1uzHhlBCSjMmZj6aoT-kmAEFTYV_3yB5GP4Y=","vhost":"/","exchange":"toptracer-cloud.topic","write":"","read":"trms-client.game-dev-test.*"},{"user":"D2dMsQzxmvs-iu-PG-qSNaalw4PSSbNG6rp3Cc-RLao=","vhost":"/","exchange":"toptracer-cloud.topic","write":"","read":"trms-client.kistagolf.*"},{"user":"ONH_qNL5EfBhPCYFVgORu9FhiHmLOiuVWkaCFKXu5lM=","vhost":"/","exchange":"toptracer-cloud.topic","write":"","read":"trms-client.kistagolf.*"},{"user":"E66ohf8S0ReAxMSaODRhe_XMMFW6MHMv_faQR3_zp7w=","vhost":"/","exchange":"toptracer-cloud.topic","write":"","read":"trms-client.se-danderyd254.*"},{"user":"N8BsL5A7-S5gM9J0PRuOmCB3ooB0Vp-cKK1iwzHQBAg=","vhost":"/","exchange":"toptracer-cloud.topic","write":"","read":"trms-client.us-tumwater30.*"}],"parameters":[],"global_parameters":[{"name":"cluster_name","value":"rabbit@ip-172-31-29-206.eu-west-1.compute.internal"}],"policies":[{"vhost":"/","name":"stomp-queues","pattern":"^stomp-","apply-to":"queues","definition":{"ha-mode":"all"},"priority":0}],"queues":[{"name":"stomp-subscription-rP88wCcbnGCJpuqh9g_31Q","vhost":"/","durable":false,"auto_delete":true,"arguments":{}},{"name":"stomp-subscription-edtQlA7saJC8kv2MYmkv6A","vhost":"/","durable":false,"auto_delete":true,"arguments":{}}],"exchanges":[{"name":"toptracer-cloud.topic","vhost":"/","type":"topic","durable":false,"auto_delete":false,"internal":false,"arguments":{}}],"bindings":[{"source":"toptracer-cloud.topic","vhost":"/","destination":"stomp-subscription-rP88wCcbnGCJpuqh9g_31Q","destination_type":"queue","routing_key":"site.trms-dev-trunk.*","arguments":{}},{"source":"toptracer-cloud.topic","vhost":"/","destination":"stomp-subscription-edtQlA7saJC8kv2MYmkv6A","destination_type":"queue","routing_key":"trms-client.trms-dev-trunk.*","arguments":{}}]}
+{
+  "rabbit_version":"3.8.0",
+  "users": [
+    {
+      "name":"guest",
+      "password_hash":"fd0GyzAf6C6hmgCJ5VU+TSyzUNlzypPlGb7VDKkqUvJqVxyd",
+      "hashing_algorithm":"rabbit_password_hashing_sha256",
+      "tags":"administrator"
+    }
+  ],
+  "vhosts": [
+    {
+      "name":"/"
+    }
+  ],
+  "permissions":[
+    {
+      "user":"guest",
+      "vhost":"/",
+      "configure":".*",
+      "write":".*",
+      "read":".*"
+    }
+  ],
+  "parameters":[],
+  "policies":[
+    {"vhost":"/","name":"ha","pattern":"", "definition":{"ha-mode":"all","ha-sync-mode":"automatic","ha-sync-batch-size":5}}
+  ],
+  "queues":[
+    {
+      "name":"q.user.created",
+      "vhost":"/",
+      "durable":true,
+      "auto_delete":true,
+      "arguments":{}
+    }
+  ],
+  "exchanges":[
+    {
+      "name":"e.user.created",
+      "vhost":"/",
+      "type":"topic",
+      "durable":true,
+      "auto_delete":false,
+      "internal":false,
+      "arguments":{}
+    }
+  ],
+  "bindings":[
+    {
+      "source":"e.user.created",
+      "vhost":"/",
+      "destination":"q.user.created",
+      "destination_type":"queue",
+      "routing_key":"user.created",
+      "arguments":{}
+    }
+  ]
+}
