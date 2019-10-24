@@ -1,47 +1,61 @@
 version: "3"
+
 services:
-  rabbit1:
-    image: rabbitmq:3-management
-    hostname: rabbit1
-    environment:
-      RABBITMQ_ERLANG_COOKIE: "rabbitcluster"
-      RABBITMQ_NODENAME: rabbit1
-    volumes:
-      - "./rabbitmq.config:/etc/rabbitmq/rabbitmq.config"
-      - "./definitions.json:/etc/rabbitmq/definitions.json"
-    ports:
-      - "4369:4369"
-      - "5671:5671"
-      - "5672:5672"
-      - "15671:15671"
-      - "15672:15672"
-      - "25672:25672"
+ rabbitmq-node-1:
+  image: rabbitmq:3-management
+  container_name: rabbitmq-node-1
+  hostname: rabbitmq-node-1
+  ports:
+   - "15672:15672"
+  networks:
+   - cluster-network
+  volumes:
+   - $PWD/storage/rabbitmq-node-1:/var/lib/rabbitmq
+  environment:
+   - RABBITMQ_ERLANG_COOKIE=cluster_cookie
+   - RABBITMQ_DEFAULT_USER=admin
+   - RABBITMQ_DEFAULT_PASS=Admin@123
 
-  rabbit2:
-    image: rabbitmq:3-management
-    hostname: rabbit2
-    depends_on:
-      - rabbit1
-    environment:
-      RABBITMQ_ERLANG_COOKIE: "rabbitcluster"
-      RABBITMQ_NODENAME: rabbit2
-    volumes:
-      - "./rabbitmq.config:/etc/rabbitmq/rabbitmq.config"
-      - "./definitions.json:/etc/rabbitmq/definitions.json"
+ rabbitmq-node-2:
+  image: rabbitmq:3-management
+  container_name: rabbitmq-node-2
+  hostname: rabbitmq-node-2
+  ports:
+   - "15673:15672"
+  networks:
+   - cluster-network
+  volumes:
+   - $PWD/storage/rabbitmq-node-2:/var/lib/rabbitmq
+  environment:
+   - RABBITMQ_ERLANG_COOKIE=cluster_cookie
+   - RABBITMQ_DEFAULT_USER=admin
+   - RABBITMQ_DEFAULT_PASS=Admin@123
 
-  rabbit3:
-    image: rabbitmq:3-management
-    hostname: rabbit3
-    depends_on:
-      - rabbit1
-    environment:
-      RABBITMQ_ERLANG_COOKIE: "rabbitcluster"
-      RABBITMQ_NODENAME: rabbit3
-    volumes:
-      - "./rabbitmq.config:/etc/rabbitmq/rabbitmq.config"
-      - "./definitions.json:/etc/rabbitmq/definitions.json"
+ rabbitmq-node-3:
+  image: rabbitmq:3-management
+  container_name: rabbitmq-node-3
+  hostname: rabbitmq-node-3
+  ports:
+   - "15674:15672"
+  networks:
+   - cluster-network
+  volumes:
+   - $PWD/storage/rabbitmq-node-3:/var/lib/rabbitmq
+  environment:
+   - RABBITMQ_ERLANG_COOKIE=cluster_cookie
+   - RABBITMQ_DEFAULT_USER=admin
+   - RABBITMQ_DEFAULT_PASS=Admin@123
+
+ haproxy:
+  image: haproxy-rabbitmq-cluster:1.7
+  container_name: haproxy
+  hostname: haproxy
+  ports:
+    - "5672:5672"
+    - "1936:1936"
+  networks:
+   - cluster-network
 
 networks:
-  default:
-    external:
-      name: rabbitmq-cluster
+    cluster-network:
+        driver: bridge
