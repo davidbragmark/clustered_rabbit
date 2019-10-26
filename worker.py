@@ -1,7 +1,7 @@
 import pika
 import time
 
-credentials = pika.PlainCredentials('guest', 'guest')
+credentials = pika.PlainCredentials('admin', 'Admin@123')
 
 connection = pika.BlockingConnection(pika.ConnectionParameters(host='localhost',
     credentials=credentials))
