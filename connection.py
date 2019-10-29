@@ -26,8 +26,8 @@ while(True):
         channel.basic_qos(prefetch_count=1)
         ## This queue is intentionally non-durable. See http://www.rabbitmq.com/ha.html#non-mirrored-queue-behavior-on-node-failure
         ## to learn more.
-        channel.queue_declare('example', durable = False, auto_delete = True)
-        channel.basic_consume('example', on_message)
+        # channel.queue_declare('example', durable = False, auto_delete = True)
+        channel.basic_consume('mirr.q_connection_1_1', on_message)
         try:
             channel.start_consuming()
         except KeyboardInterrupt:

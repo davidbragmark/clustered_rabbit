@@ -29,7 +29,7 @@ while(True):
 
         try:
             channel.basic_publish(exchange='',
-                        routing_key='example',
+                        routing_key='mirr.q_connection_1_1',
                         body=message,
                         properties=pika.BasicProperties(
                             delivery_mode=2
