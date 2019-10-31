@@ -3,6 +3,7 @@ import random
 import sys
 import time
 import string
+from pprint import pprint
 
 ## Assuming there are three hosts: host1, host2, and host3
 node1 = pika.connection.URLParameters('amqp://admin:Admin%40123@172.19.0.3:5672/%2F')
@@ -17,14 +18,16 @@ while(True):
         ## This can help balance connections.
         random.shuffle(all_endpoints)
         connection = pika.BlockingConnection(all_endpoints)
+        pprint(connection)
+        print()
         channel = connection.channel()
         channel.basic_qos(prefetch_count=1)
         ## This queue is intentionally non-durable. See http://www.rabbitmq.com/ha.html#non-mirrored-queue-behavior-on-node-failure
         ## to learn more.
-        channel.queue_declare('example', durable = False, auto_delete = True)
+        # channel.queue_declare('example', durable = False, auto_delete = True)
 
         # message = ' '.join(sys.argv[1:]) or 'Hello world!'
-        message = ''.join(random.choices(string.ascii_lowercase, k=10))
+        message = ''.join(random.choices(string.ascii_lowercase, k=30))
         time.sleep(1)
 
         try:

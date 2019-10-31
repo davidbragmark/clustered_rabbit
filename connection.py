@@ -21,19 +21,22 @@ while(True):
         ## Shuffle the hosts list before reconnecting.
         ## This can help balance connections.
         random.shuffle(all_endpoints)
-        connection = pika.BlockingConnection(all_endpoints)
+        connection = pika.BlockingConnection(node2)
         channel = connection.channel()
         channel.basic_qos(prefetch_count=1)
         ## This queue is intentionally non-durable. See http://www.rabbitmq.com/ha.html#non-mirrored-queue-behavior-on-node-failure
         ## to learn more.
         # channel.queue_declare('example', durable = False, auto_delete = True)
         channel.basic_consume('mirr.q_connection_1_1', on_message)
+        channel.basic_consume('text', on_message)
+
         try:
             channel.start_consuming()
         except KeyboardInterrupt:
             channel.stop_consuming()
             connection.close()
             break
+
     except pika.exceptions.ConnectionClosedByBroker:
         # Uncomment this to make the example not attempt recovery
         # from server-initiated connection closure, including
